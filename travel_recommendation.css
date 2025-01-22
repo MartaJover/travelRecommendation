@@ -1,81 +1,21 @@
-/* Basic CSS for the navigation bar */
-
+/* Basic CSS for navigation bar */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-nav {
-  padding: 5px 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  z-index: 1;
-}
-  
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-nav ul li {
-  margin-left: 1.5rem;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-  font-size: 95%;
-  font-weight: 400;
-  border-radius: 5px;
-}
 
-nav ul li input#Search {
-  width: 300px !important;
-  padding: 10px !important;
-  border: 1px solid #ccc !important;
-  border-radius: 20px !important;
-  font-size: 16px !important;
-  outline: none !important;
-  box-sizing: border-box !important;
-}
-
-nav ul li a:hover {
-  background-color: #f5f5f5;
-}
-  
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-nav .logo {
-  display: flex;
-  align-items: center;
-}
-nav .logo img {
-  height: 40px;
-  width: auto;
-  margin-right: 10px;
-}
-nav .logo h1 {
-  font-size: 1.2rem;
-  background: black;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-  
-/* Basic CSS for the form elements */
+/* Basic CSS for the body and text elements */
 body {
   font-family: Arial, sans-serif;
-  /* margin: 20px; */
 }
 
 h1 {
   margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
 }
 
 div {
@@ -87,6 +27,7 @@ label {
   width: 100px;
 }
 
+/* Basic CSS for input and button elements */
 input[type="text"],
 input[type="number"],
 select {
@@ -94,37 +35,99 @@ select {
   padding: 5px;
 }
 
-button {
-  padding: 7px 15px;
-  background-color: #4CAF50;
-  color: white;
+nav {
+  padding: 5px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 95%;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+nav .logo h1 {
+  font-size: 1.2rem;
+  background: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-container {
+  display: flex;
+  border: 1px solid darkgrey;
+  border-radius: 24px;
+  overflow: hidden;
+  width: 450px;
+  justify-content: space-between;
+  gap: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
+}
+
+.search-container input {
+  flex: 1;
   border: none;
+  padding: 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-container button {
+  border: none;
+  background-color: teal;
+  color: white;
+  padding: 10px 15px;
   cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
-/* Basic CSS for the report section */
-h2 {
-  margin-top: 30px;
-}
-
-#report,#result {
-  padding: 10px;
-  max-width: 400px;
-  word-wrap: break-word;
-}
-#result{
-height: 400px;
-width: 500px;
-display: flex;
-align-items: center;
-justify-content: space-around;
-flex-direction: column;
-}
-#result img{
-  width: 200px;
-  height: 100px;
-}
+.search-container button:hover {
+  border: none;
+  background-color: darkslategray;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;}
