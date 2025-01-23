@@ -12,8 +12,11 @@ h1 {
   margin-bottom: 20px;
 }
 
-h2 {
-  margin-top: 30px;
+.title.center {
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 label {
@@ -21,7 +24,6 @@ label {
   width: 100px;
 }
 
-/* Basic CSS for input and button elements */
 input[type="text"],
 input[type="number"],
 select {
@@ -202,6 +204,106 @@ a {
 .footer .social-icons img {
   width: 30px;
   height: 30px;
+}
+
+.about {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about_content {
+  padding: 5%;
+  flex: 1;
+}
+
+.about_text {
+  text-align: left;
+  max-width: 100%;
+  font-size: 20px;
+  margin: 0 0 16px 0;
+}
+
+.about_image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center;
+}
+
+.about_image .responsive-image {
+  width: 80%;
+  height: auto;
+  display: block;
+  align-content: center;
+}
+
+.about h1 {
+  margin: 0 0 16px 0;
+}
+
+.container {
+  width:100%;
+  max-width:600px;
+  border:2px solid black;
+  margin: 0 auto;
+  padding:10px;
+}
+
+.row {
+  height:100%;
+  width:100%;
+  margin-bottom:10px;
+  padding:5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.col2 {
+  width:49%;
+  float:left;
+  height:100%;
+  margin-right:2%;
+  align-items: center;
+}
+
+.col2:last-child {
+  margin-right:0; 
+  align-items: center; 
+}
+
+.col3 {
+  width:30%;
+  float:left;
+  height:100%;
+  margin-right:2%;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  background-color: white;
+  object-fit: cover;
+  padding: 16px;
+}
+
+.card_image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 @media (max-width: 1090px) {
