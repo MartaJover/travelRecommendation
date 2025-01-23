@@ -1,11 +1,9 @@
-/* Basic CSS for navigation bar */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Basic CSS for the body and text elements */
 body {
   font-family: Arial, sans-serif;
 }
@@ -16,9 +14,6 @@ h1 {
 
 h2 {
   margin-top: 30px;
-}
-
-div {
 }
 
 label {
