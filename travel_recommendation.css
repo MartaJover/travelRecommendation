@@ -353,6 +353,14 @@ textarea {
   margin-bottom: 1rem;
 }
 
+.searchTravelRecommendation {
+  width:49%;
+  float:left;
+  height:100%;
+  margin-right:2%;
+  align-items: center;
+}
+
 @media (max-width: 1090px) {
   h1 {
     font-size: 40px;
